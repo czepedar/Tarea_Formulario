@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto', Arial Rounded MT Bold;
+  }
+
+@media screen and (max-width: 900px) {
+    main {
+      padding: 1.5rem;
+      background: #fafafa;
+    }
+  }
+
+@media screen and (min-width: 901px) {
+    main {
+      margin: 3rem;
+      padding: 1.5rem;
+      background: #fafafa;
+    }
+  }
+
+  input, select {
+    padding: 8px
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0;
+    
+  }

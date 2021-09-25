@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Formulario.css">
+    <script src="./Formulario.js"></script>
+    <title>Formulario Prestamo de Vivienda</title>
+</head>
+<body>
+    <main>
+        <h1>Formulario Para Prestamo de Vivienda</h1>
+        <form id="formulario-prestamo">
+            <div class="input">
+                <label>Nombre</label>
+                <input name="nombre" required autocomplete id="input-nombre" type="text"  placeholder="Carlos Zepeda Rubí">
+            </div>
+
+            <div class="input">
+                <label>Cédula</label>
+                <input name="cedula" required id="input-cedula" type="text"  placeholder="1-1170-0791">
+            </div>
+             
+            <div class="input">
+                <label>Ingreso Bruto</label>
+                <input required name="input-Ingreso" type="number"  placeholder="0">
+            </div>   
+
+            <div class="input">
+               <label>Monto Prestamo</label>
+               <input required name="input-monto" type="number"  placeholder="0">
+            </div>  
+
+            <div class="input">
+                <label>Correo electrónico</label>
+                <input name="correo" required autocomplete id="input-correo" type="email"  placeholder="ejemplo@dominio.com">
+            </div>
+
+            <div class="input">
+               <label>Número de teléfono</label>
+               <input required name="numero-telefono" autocomplete type="tel" placeholder="2222-2222" pattern="[0-9]{4}-[0-9]{4}">
+            </div>  
+
+            <div class="input">
+                <label>Género</label>
+                <select required name="genero">
+                  <option value="">Seleccione un género</option>
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select>
+            </div>
+
+              <div class="input">
+                <label>Tiempo en Trabajo Actual</label>
+                  <div class="input">
+                    <label>Fecha Inicio</label>
+                    <input name="fecha-Inicio" type="date">
+                  </div>
+                  <div class="input">
+                    <label>Fecha Actual</label>
+                    <input name="fecha-Actual" type="date">
+                  </div>
+             </div>
+             <button id="boton-enviar" type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
